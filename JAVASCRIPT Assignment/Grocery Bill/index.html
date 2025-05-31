@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Grocery Bill Calculator</title>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <div class="max-w-5xl mx-auto py-10 px-6">
+      <h1 class="text-3xl font-bold mb-8 text-center">Grocery Bill Calculator</h1>
+      <div class="flex flex-col md:flex-row gap-8 justify-between">
+        <!-- Input Form -->
+        <div class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/2">
+          <h2 class="text-xl font-semibold mb-4">Enter Quantities</h2>
+          <form id="grocery-form" class="space-y-4">
+            <div>
+              <label for="riceQty" class="block text-sm font-medium">Rice Quantity</label>
+              <input
+                type="number"
+                id="riceQty"
+                name="riceQty"
+                min="0"
+                step="0.01"
+                placeholder="e.g. 2.5"
+                class="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div>
+              <label for="beansQty" class="block text-sm font-medium">Beans Quantity</label>
+              <input
+                type="number"
+                id="beansQty"
+                name="beansQty"
+                min="0"
+                step="0.01"
+                placeholder="e.g. 1"
+                class="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <div>
+              <label for="chickenQty" class="block text-sm font-medium">Chicken Quantity</label>
+              <input
+                type="number"
+                id="chickenQty"
+                name="chickenQty"
+                min="0"
+                step="0.01"
+                placeholder="e.g. 3"
+                class="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <button
+              type="submit"
+              class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
+            >
+              Calculate Total
+            </button>
+          </form>
+        </div>
+
+        <!-- Price Card -->
+        <div class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/2">
+          <h2 class="text-xl font-semibold mb-4">Price Summary</h2>
+          <p>Rice Price: <strong>$4 / unit</strong></p>
+          <p>Beans Price: <strong>$3 / unit</strong></p>
+          <p>Chicken Price: <strong>$7 / unit</strong></p>
+          <hr class="my-4" />
+          <p class="text-lg">Total Price: <strong id="totalPrice">$0.00</strong></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
