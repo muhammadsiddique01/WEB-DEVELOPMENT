@@ -1,6 +1,6 @@
 # 🛒 SID Grocery Store
 
-**SID Grocery Store** is a simple and responsive front-end website created as a **Course Completion Project (CCP)** for the E-Business course at Iqra University. It showcases a basic online grocery store layout using HTML and CSS, simulating how digital stores work in the real world.
+**SID Grocery Store** is a simple and responsive front-end website developed as the **Final Project for the Bano Qabil program**. It presents a functional online grocery store interface using only HTML and CSS, simulating how digital stores operate in the real world.
 
 ## 📌 Live Demo
 
